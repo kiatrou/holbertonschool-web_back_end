@@ -8,10 +8,10 @@ def floor(n: float) -> int:
     """
     Args:
         n (float): The number to find the floor of
-        
+
     Returns:
         int: The largest integer less than or equal to n
-        
+
     Examples:
         >>> floor(3.7)
         3
