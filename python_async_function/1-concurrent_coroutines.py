@@ -24,7 +24,7 @@ async def wait_n(n: int, max_delay: int = 10) -> List[float]:
     # Run all tasks concurrently and get results
     results = await asyncio.gather(*tasks)
 
-    # Insert each result in ascending order without using sort()
+    # Insert each result in ascending order
     ordered_delays = []
     for delay in results:
         bisect.insort(ordered_delays, delay)
