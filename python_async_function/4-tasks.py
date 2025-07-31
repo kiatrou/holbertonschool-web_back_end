@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Module containing task_wait_n function that spawns
-multiple asyncio Tasks and returns 
+multiple asyncio Tasks and returns
 their results in ascending order.
 """
 from typing import List
