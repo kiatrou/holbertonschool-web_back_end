@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Spawn wait_random n times with the specified max_delay.
-    Returns a list of delays in ascending order without using sort().
+    Returns a list of delays in ascending order
 """
 import asyncio
 import bisect
