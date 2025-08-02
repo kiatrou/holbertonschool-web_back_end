@@ -4,9 +4,10 @@ Module containing an async generator that yields random numbers with delays.
 """
 import asyncio
 import random
+from typing import AsyncIterable
 
 
-async def async_generator():
+async def async_generator() -> AsyncIterable[float]:
     """
     Async generator that yields 10 random numbers between 0 and 10.
 
