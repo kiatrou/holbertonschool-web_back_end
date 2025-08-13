@@ -83,13 +83,14 @@ class Server:
         page_data = rows[start:end]
         return page_data
 
-
     def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
         """
         Get paginated data with comprehensive pagination metadata.
 
-        This method returns both the page data and detailed pagination information
-        including navigation details and dataset statistics. It reuses the get_page
+        This method returns both the page data and detailed
+        pagination information
+        including navigation details and dataset statistics.
+        It reuses the get_page
         method to retrieve the actual data and adds metadata around it.
 
         Args:
@@ -99,14 +100,17 @@ class Server:
             Must be a positive integer. Defaults to 10.
 
         Returns:
-            dict: A dictionary containing pagination data and metadata with keys:
+            dict: A dictionary containing pagination data
+            and metadata with keys:
                 - page_size (int): Actual number of items in the returned page
                 - page (int): Current page number
                 - data (List[List]): The dataset page (list of rows)
-                - next_page (int or None): Next page number, None if no next page
+                - next_page (int or None): Next page number,
+                None if no next page
                 - prev_page (int or None): Previous page number, None if
                 no previous page
-                - total_pages (int): Total number of pages in the entire dataset
+                - total_pages (int): Total number of pages
+                in the entire dataset
         """
         data = self.get_page(page, page_size)
         prev_page = None if page == 1 else page - 1
