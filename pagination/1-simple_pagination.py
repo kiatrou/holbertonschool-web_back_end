@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+"""
+Simple pagination server for Popular Baby Names dataset.
+"""
+
 
 import csv
 import math
