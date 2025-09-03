@@ -1,4 +1,9 @@
 export default function cleanSet(set, startString) {
+    // handling edge case
+    if (!startString || startString === '') {
+        return '';
+    }
+
     // converted set to array
     const arr = [...set];
     // filtered through array to find values that start with startString
