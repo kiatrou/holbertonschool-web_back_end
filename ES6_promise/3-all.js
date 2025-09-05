@@ -7,7 +7,7 @@ export default function handleProfileSignup() {
         const firstName = results[1].firstName;
         const lastName = results[1].lastName;
 
-        console.log(body, firstName, lastName);
+        console.log(body + " " + firstName + " " + lastName);
     })
 
     .catch(() => {
